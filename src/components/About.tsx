@@ -50,7 +50,7 @@ const About: React.FC = () => {
           >
               <h3>Minha Jornada</h3>
               <p>
-                Formada em Engenharia de Software pela PUCC Campinas (2024), desenvolvi uma 
+                Formada em Engenharia de Software pela PUCC Campinas (2025), desenvolvi uma 
                 plataforma completa de e-commerce na PredCash, integrando aplicativo mobile, 
                 versão web e sistema de entrega em tempo real.
               </p>
