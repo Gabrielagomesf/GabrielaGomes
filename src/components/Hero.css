@@ -1,0 +1,283 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding-top: 80px;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.highlight {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.hero-social a:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-block {
+  background-color: var(--bg-dark);
+  border-radius: 1rem;
+  padding: 0;
+  box-shadow: var(--shadow-lg);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.code-header {
+  background-color: #374151;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.code-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.code-dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #6b7280;
+}
+
+.code-dots span:nth-child(1) {
+  background-color: #ef4444;
+}
+
+.code-dots span:nth-child(2) {
+  background-color: #f59e0b;
+}
+
+.code-dots span:nth-child(3) {
+  background-color: #10b981;
+}
+
+.code-title {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.code-content {
+  padding: 1.5rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.code-line {
+  margin-bottom: 0.25rem;
+}
+
+.code-keyword {
+  color: #c792ea;
+}
+
+.code-class {
+  color: #82aaff;
+}
+
+.code-property {
+  color: #89ddff;
+}
+
+.code-string {
+  color: #c3e88d;
+}
+
+.code-bracket {
+  color: #89ddff;
+}
+
+.code-dot {
+  color: #89ddff;
+}
+
+.code-operator {
+  color: #89ddff;
+}
+
+.code-comma {
+  color: #89ddff;
+}
+
+.code-space {
+  display: inline-block;
+  width: 1rem;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero-content {
+    gap: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .code-content {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 70px;
+  }
+  
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .btn-whatsapp {
+    background: #25d366;
+    color: white;
+    border: 2px solid #25d366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+
+  .btn-whatsapp:hover {
+    background: #128c7e;
+    border-color: #128c7e;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .hero-social {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+/* Mobile Medium */
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 60px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons .btn {
+    max-width: 280px;
+  }
+
+  .hero-social a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.125rem;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+}
