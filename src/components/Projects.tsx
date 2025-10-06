@@ -99,11 +99,6 @@ const Projects: React.FC = () => {
                   backgroundRepeat: 'no-repeat'
                 } : {}}
               >
-                {project.icon && (
-                  <div className="project-icon">
-                    {project.icon}
-                  </div>
-                )}
                 <div className="project-category" style={{ backgroundColor: getCategoryColor(project.category) }}>
                   <span className="category-text">{project.category}</span>
                 </div>

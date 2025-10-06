@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
                 Entre em Contato
               </button>
               <a 
-                href="/cv-gabriela-ferreira-gomes.pdf" 
+                href="/Curriculo%20Gabriela.pdf" 
                 download 
                 className="btn btn-cv"
               >
@@ -111,10 +111,10 @@ const Hero: React.FC = () => {
                   <span className="code-space"></span><span className="code-keyword">final</span> <span className="code-type">List</span><span className="code-bracket">&lt;</span><span className="code-type">String</span><span className="code-bracket">&gt;</span> <span className="code-property">especialidades</span><span className="code-comma">;</span>
                 </div>
                 <div className="code-line">
-                  <span className="code-space"></span><span className="code-keyword">const</span> <span className="code-class">GabrielaDev</span><span className="code-bracket">()</span> <span className="code-bracket">{':'}</span>
+                  <span className="code-space"></span><span className="code-keyword">const</span> <span className="code-class">GabrielaDev</span><span className="code-bracket">()</span>
                 </div>
                 <div className="code-line">
-                  <span className="code-space"></span><span className="code-space"></span><span className="code-property">especialidades</span> <span className="code-operator">=</span> <span className="code-bracket">[</span>
+                  <span className="code-space"></span><span className="code-space"></span><span className="code-bracket">{':'}</span> <span className="code-property">especialidades</span> <span className="code-operator">=</span> <span className="code-keyword">const</span> <span className="code-bracket">[</span>
                 </div>
                 <div className="code-line">
                   <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'Mobile First'</span><span className="code-comma">,</span>
@@ -126,13 +126,12 @@ const Hero: React.FC = () => {
                   <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'Performance'</span><span className="code-comma">,</span>
                 </div>
                 <div className="code-line">
-                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'UX/UI'</span>
+                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'UX/UI'</span><span className="code-comma">,</span>
                 </div>
                 <div className="code-line">
                   <span className="code-space"></span><span className="code-space"></span><span className="code-bracket">]</span><span className="code-comma">;</span>
                 </div>
-                <div className="code-line">
-                </div>
+                <div className="code-line"></div>
                 <div className="code-line">
                   <span className="code-space"></span><span className="code-keyword">void</span> <span className="code-function">desenvolver</span><span className="code-bracket">()</span> <span className="code-bracket">{'{'}</span>
                 </div>
@@ -143,6 +142,20 @@ const Hero: React.FC = () => {
                   <span className="code-space"></span><span className="code-bracket">{'}'}</span>
                 </div>
                 <div className="code-line">
+                  <span className="code-bracket">{'}'}</span>
+                </div>
+                <div className="code-line"></div>
+                <div className="code-line">
+                  <span className="code-keyword">void</span> <span className="code-function">main</span><span className="code-bracket">()</span> <span className="code-bracket">{'{'}</span>
+                </div>
+                <div className="code-line">
+                  <span className="code-space"></span><span className="code-keyword">const</span> <span className="code-property">dev</span> <span className="code-operator">=</span> <span className="code-class">GabrielaDev</span><span className="code-bracket">()</span><span className="code-comma">;</span>
+                </div>
+                <div className="code-line">
+                  <span className="code-space"></span><span className="code-property">dev</span><span className="code-bracket">.</span><span className="code-function">desenvolver</span><span className="code-bracket">()</span><span className="code-comma">;</span>
+                </div>
+                <div className="code-line">
+                  <span className="code-space"></span><span className="code-function">print</span><span className="code-bracket">(</span><span className="code-property">dev</span><span className="code-bracket">.</span><span className="code-property">especialidades</span><span className="code-bracket">)</span><span className="code-comma">;</span>
                 </div>
                 <div className="code-line">
                   <span className="code-bracket">{'}'}</span>
