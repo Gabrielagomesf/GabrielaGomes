@@ -1,17 +1,17 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaCode, FaCogs, FaRocket, FaUsers } from 'react-icons/fa'
+import { FaMobile, FaCode, FaRocket, FaUsers } from 'react-icons/fa'
 import './About.css'
 
 const About: React.FC = () => {
   const principles = [
     {
-      icon: <FaCode />,
+      icon: <FaMobile />,
       title: 'Mobile First',
       description: 'Desenvolvimento focado em experiência mobile, criando apps nativos e cross-platform com Flutter e Kotlin.'
     },
     {
-      icon: <FaCogs />,
+      icon: <FaCode />,
       title: 'Web Moderna',
       description: 'Desenvolvimento web responsivo com React, TypeScript e as mais recentes tecnologias frontend.'
     },
@@ -48,23 +48,17 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-              <h3>Gabriela Ferreira Gomes - Desenvolvedora Junior Full Stack</h3>
+              <h3>Minha Jornada</h3>
               <p>
-                Formada em Engenharia de Software pela PUCC Campinas (2024), com experiência
-                profissional em desenvolvimento de aplicações web, mobile e criação de APIs REST.
-                Especializada em Flutter, TypeScript, Node.js e MongoDB.
+                Formada em Engenharia de Software pela PUCC Campinas (2024), desenvolvi uma 
+                plataforma completa de e-commerce na PredCash, integrando aplicativo mobile, 
+                versão web e sistema de entrega em tempo real.
               </p>
-            <p>
-              Atuei na PredCash desenvolvendo uma plataforma completa estilo Shopee com 
-              aplicativo de entrega e versão mobile para compras, criando APIs REST para 
-              integração entre frontend e backend, utilizando tecnologias modernas como 
-              Flutter para mobile, TypeScript para frontend e Node.js para backend.
-            </p>
-            <p>
-              Minha paixão é criar soluções digitais inovadoras que conectam pessoas e 
-              facilitam o dia a dia, sempre priorizando a experiência do usuário e 
-              a qualidade do código.
-            </p>
+              <p>
+                Especializada em criar soluções cross-platform que conectam pessoas e 
+                facilitam o dia a dia, sempre priorizando a experiência do usuário e 
+                a qualidade do código.
+              </p>
           </motion.div>
 
           <motion.div 
@@ -97,32 +91,6 @@ const About: React.FC = () => {
           </motion.div>
         </div>
 
-        <motion.div 
-          className="about-stats"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="stats-grid">
-            <div className="stat-item">
-              <div className="stat-number">2024</div>
-              <div className="stat-label">Formada PUCC</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">Flutter</div>
-              <div className="stat-label">Especialização</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">TypeScript</div>
-              <div className="stat-label">Expertise</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">Mobile</div>
-              <div className="stat-label">Foco Principal</div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

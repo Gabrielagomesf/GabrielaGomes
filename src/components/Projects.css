@@ -32,6 +32,41 @@
   box-shadow: var(--shadow-lg);
 }
 
+.project-header {
+  position: relative;
+  height: 160px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-header[style*="background-image"] {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.project-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.project-logo {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .project-image {
   position: relative;
   height: 160px;
@@ -51,7 +86,7 @@
   z-index: 1;
 }
 
-.project-category {
+.project-header .project-category {
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -64,6 +99,15 @@
   font-size: 0.875rem;
   font-weight: 500;
   backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+.project-header .project-links {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
   z-index: 2;
 }
 
@@ -93,6 +137,21 @@
 .project-links {
   display: flex;
   gap: 1rem;
+}
+
+.project-header .project-link {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-link {
@@ -259,13 +318,28 @@
     font-size: 0.9rem;
   }
 
+  .project-header {
+    height: 140px;
+  }
+
+  .project-icon {
+    width: 60px;
+    height: 60px;
+  }
+
   .project-image {
     height: 180px;
   }
 
-  .project-category {
+  .project-header .project-category {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
+  }
+
+  .project-header .project-link {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
   }
 
   .project-link {
@@ -293,8 +367,28 @@
     font-size: 0.85rem;
   }
 
+  .project-header {
+    height: 120px;
+  }
+
+  .project-icon {
+    width: 50px;
+    height: 50px;
+  }
+
   .project-image {
     height: 160px;
+  }
+
+  .project-header .project-category {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .project-header .project-link {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
   }
 
   .projects-cta {

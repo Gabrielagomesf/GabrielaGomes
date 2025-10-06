@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { FaDownload, FaHome, FaUser, FaBriefcase, FaCode, FaProjectDiagram, FaEnvelope } from 'react-icons/fa'
 import './Header.css'
 
 const Header: React.FC = () => {
@@ -42,21 +41,12 @@ const Header: React.FC = () => {
 
           <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
             <ul className="nav-list">
-              <li><button onClick={() => scrollToSection('home')}><FaHome /> Início</button></li>
-              <li><button onClick={() => scrollToSection('about')}><FaUser /> Sobre</button></li>
-              <li><button onClick={() => scrollToSection('experience')}><FaBriefcase /> Experiência</button></li>
-              <li><button onClick={() => scrollToSection('skills')}><FaCode /> Habilidades</button></li>
-              <li><button onClick={() => scrollToSection('projects')}><FaProjectDiagram /> Projetos</button></li>
-              <li><button onClick={() => scrollToSection('contact')}><FaEnvelope /> Contato</button></li>
-              <li>
-                <a 
-                  href="/cv-gabriela-ferreira-gomes.pdf" 
-                  download 
-                  className="btn-cv"
-                >
-                  <FaDownload /> CV
-                </a>
-              </li>
+              <li><button onClick={() => scrollToSection('home')}>Início</button></li>
+              <li><button onClick={() => scrollToSection('about')}>Sobre</button></li>
+              <li><button onClick={() => scrollToSection('experience')}>Experiência</button></li>
+              <li><button onClick={() => scrollToSection('skills')}>Habilidades</button></li>
+              <li><button onClick={() => scrollToSection('projects')}>Projetos</button></li>
+              <li><button onClick={() => scrollToSection('contact')}>Contato</button></li>
             </ul>
           </nav>
 

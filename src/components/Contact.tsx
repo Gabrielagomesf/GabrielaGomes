@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
 import './Contact.css'
 
@@ -86,19 +85,16 @@ const Contact: React.FC = () => {
 
   const contactInfo = [
     {
-      icon: <FaEnvelope />,
       title: 'Email',
       value: 'goomes.016@gmail.com',
       link: 'mailto:goomes.016@gmail.com'
     },
     {
-      icon: <FaWhatsapp />,
       title: 'WhatsApp',
       value: '(19) 99555-5280',
       link: 'https://wa.me/5519995555280?text=Olá! Vi seu portfólio e gostaria de conversar sobre oportunidades.'
     },
     {
-      icon: <FaMapMarkerAlt />,
       title: 'Localização',
       value: 'Campinas, SP - Brasil',
       link: '#'
@@ -177,10 +173,8 @@ const Contact: React.FC = () => {
             <h3>Vamos Conversar</h3>
               <p>
                 Estou sempre interessada em novos desafios e oportunidades de colaboração.
-                Como desenvolvedora Junior Full Stack, estou pronta para contribuir em projetos
-                mobile, web, frontend, backend e desenvolvimento de APIs. Se você tem um projeto 
-                em mente ou quer discutir sobre desenvolvimento Flutter, TypeScript, Node.js ou 
-                criação de APIs REST, não hesite em entrar em contato!
+                Pronta para contribuir em projetos mobile, web e desenvolvimento de APIs.
+                Tem um projeto em mente? Vamos transformar sua ideia em realidade!
               </p>
 
             <div className="contact-details">
@@ -193,9 +187,6 @@ const Contact: React.FC = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="contact-icon">
-                    {info.icon}
-                  </div>
                   <div className="contact-text">
                     <h4>{info.title}</h4>
                     <a href={info.link}>{info.value}</a>
@@ -275,7 +266,7 @@ const Contact: React.FC = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <FaPaperPlane /> {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
+{isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
             </motion.button>
           </motion.form>
         </div>

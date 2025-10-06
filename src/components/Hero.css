@@ -39,11 +39,33 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .hero-social {
   display: flex;
   gap: 1rem;
+}
+
+.btn-cv {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cv:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
 }
 
 .hero-social a {
@@ -209,7 +231,8 @@
     gap: 1rem;
   }
 
-  .hero-buttons .btn {
+  .hero-buttons .btn,
+  .hero-buttons .btn-cv {
     width: 100%;
     max-width: 300px;
     display: flex;

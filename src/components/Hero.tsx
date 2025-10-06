@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaEye, FaPaperPlane } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa'
 import './Hero.css'
 
 const Hero: React.FC = () => {
@@ -36,9 +36,8 @@ const Hero: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Desenvolvedora Junior Full Stack especializada em Flutter, TypeScript e Node.js.
-                Formada em Engenharia de Software pela PUCC Campinas, com experiência
-                em desenvolvimento de aplicações web, mobile e criação de APIs REST.
+                Desenvolvedora Junior Full Stack com foco em soluções mobile e web inovadoras.
+                Transformando ideias em aplicações funcionais e experiências digitais excepcionais.
               </motion.p>
 
             <motion.div 
@@ -51,14 +50,21 @@ const Hero: React.FC = () => {
                 className="btn btn-primary"
                 onClick={() => scrollToSection('projects')}
               >
-                <FaEye /> Ver Projetos
+                Ver Projetos
               </button>
               <button 
                 className="btn btn-secondary"
                 onClick={() => scrollToSection('contact')}
               >
-                <FaPaperPlane /> Entre em Contato
+                Entre em Contato
               </button>
+              <a 
+                href="/cv-gabriela-ferreira-gomes.pdf" 
+                download 
+                className="btn btn-cv"
+              >
+                Baixar CV
+              </a>
             </motion.div>
 
             <motion.div 
@@ -111,16 +117,16 @@ const Hero: React.FC = () => {
                   <span className="code-space"></span><span className="code-space"></span><span className="code-property">especialidades</span> <span className="code-operator">=</span> <span className="code-bracket">[</span>
                 </div>
                 <div className="code-line">
-                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'Flutter & Dart'</span><span className="code-comma">,</span>
+                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'Mobile First'</span><span className="code-comma">,</span>
                 </div>
                 <div className="code-line">
-                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'TypeScript'</span><span className="code-comma">,</span>
+                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'Web Moderna'</span><span className="code-comma">,</span>
                 </div>
                 <div className="code-line">
-                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'Node.js'</span><span className="code-comma">,</span>
+                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'Performance'</span><span className="code-comma">,</span>
                 </div>
                 <div className="code-line">
-                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'MongoDB'</span>
+                  <span className="code-space"></span><span className="code-space"></span><span className="code-space"></span><span className="code-string">'UX/UI'</span>
                 </div>
                 <div className="code-line">
                   <span className="code-space"></span><span className="code-space"></span><span className="code-bracket">]</span><span className="code-comma">;</span>

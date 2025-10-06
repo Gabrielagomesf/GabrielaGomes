@@ -1,15 +1,29 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { 
-  FaReact, 
-  FaNodeJs, 
   FaDatabase,
   FaCode,
   FaServer,
-  FaCloud,
-  FaMobile
+  FaMobile,
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaAndroid,
+  FaApple
 } from 'react-icons/fa'
-import { SiTypescript, SiJavascript, SiPostgresql, SiMongodb, SiFlutter, SiKotlin, SiAndroid, SiIos } from 'react-icons/si'
+import { 
+  SiFlutter, 
+  SiDart, 
+  SiKotlin, 
+  SiTypescript, 
+  SiExpress, 
+  SiFirebase, 
+  SiMongodb, 
+  SiSqlite, 
+  SiPostgresql 
+} from 'react-icons/si'
 import './Skills.css'
 
 const Skills: React.FC = () => {
@@ -18,41 +32,41 @@ const Skills: React.FC = () => {
       title: 'Mobile',
       icon: <FaMobile />,
       skills: [
-        { name: 'Flutter', icon: <SiFlutter />, level: 90 },
-        { name: 'Dart', icon: <SiFlutter />, level: 90 },
-        { name: 'Kotlin', icon: <SiKotlin />, level: 85 },
-        { name: 'Android', icon: <SiAndroid />, level: 80 },
-        { name: 'iOS', icon: <SiIos />, level: 75 }
+        { name: 'Flutter', level: 90, icon: <SiFlutter /> },
+        { name: 'Dart', level: 90, icon: <SiDart /> },
+        { name: 'Kotlin', level: 85, icon: <SiKotlin /> },
+        { name: 'Android', level: 80, icon: <FaAndroid /> },
+        { name: 'iOS', level: 75, icon: <FaApple /> }
       ]
     },
     {
       title: 'Frontend Web',
       icon: <FaCode />,
       skills: [
-        { name: 'TypeScript', icon: <SiTypescript />, level: 85 },
-        { name: 'JavaScript', icon: <SiJavascript />, level: 90 },
-        { name: 'HTML/CSS', icon: <FaCode />, level: 85 },
-        { name: 'React', icon: <FaReact />, level: 80 }
+        { name: 'TypeScript', level: 85, icon: <SiTypescript /> },
+        { name: 'JavaScript', level: 90, icon: <FaJs /> },
+        { name: 'HTML/CSS', level: 85, icon: <FaHtml5 /> },
+        { name: 'React', level: 80, icon: <FaReact /> }
       ]
     },
     {
       title: 'Backend & APIs',
       icon: <FaServer />,
       skills: [
-        { name: 'Node.js', icon: <FaNodeJs />, level: 85 },
-        { name: 'REST APIs', icon: <FaServer />, level: 90 },
-        { name: 'Express.js', icon: <FaServer />, level: 80 },
-        { name: 'Firebase', icon: <FaCloud />, level: 75 }
+        { name: 'Node.js', level: 85, icon: <FaNodeJs /> },
+        { name: 'REST APIs', level: 90, icon: <FaServer /> },
+        { name: 'Express.js', level: 80, icon: <SiExpress /> },
+        { name: 'Firebase', level: 75, icon: <SiFirebase /> }
       ]
     },
     {
       title: 'Banco de Dados',
       icon: <FaDatabase />,
       skills: [
-        { name: 'MongoDB', icon: <SiMongodb />, level: 85 },
-        { name: 'SQLite', icon: <FaDatabase />, level: 80 },
-        { name: 'Firestore', icon: <FaDatabase />, level: 75 },
-        { name: 'PostgreSQL', icon: <SiPostgresql />, level: 70 }
+        { name: 'MongoDB', level: 85, icon: <SiMongodb /> },
+        { name: 'SQLite', level: 80, icon: <SiSqlite /> },
+        { name: 'Firestore', level: 75, icon: <SiFirebase /> },
+        { name: 'PostgreSQL', level: 70, icon: <SiPostgresql /> }
       ]
     }
   ]
